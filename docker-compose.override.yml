@@ -1,0 +1,11 @@
+version: "2.1"
+
+services:
+  sogo-mailcow:
+    volumes:
+      - ./data/conf/sogo/custom-theme.css:/usr/lib/GNUstep/SOGo/WebServerResources/css/theme-default.css:z
+      - ./data/conf/sogo/UIxMailFolderTemplate.wox:/etc/sogo/UIxMailFolderTemplate.wox
+      - ./data/conf/sogo/UIxMailFolderTemplate.wox:/usr/lib/GNUstep/SOGo/Templates/MailerUI/UIxMailFolderTemplate.wox
+      - ./data/conf/sogo/UIxMailFolderTemplate.wox:/sogo_web/Templates/MailerUI/UIxMailFolderTemplate.wox
+      - ./data/conf/sogo/UIxMailFolderTemplate.wox:/sogo_web/Templates/MainUI/UIxMailFolderTemplate.wox
+ 
